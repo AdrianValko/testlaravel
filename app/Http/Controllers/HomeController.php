@@ -32,6 +32,7 @@ class HomeController extends Controller
     }
 
     public function selectAll(){
+        echo 23;
         $tasks = Task::all();
         foreach ($tasks as $task){
             echo $task->id . "<br>";
