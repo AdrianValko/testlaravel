@@ -17,4 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test-skuska', [HomeController::class, 'test']);
+Route::get('/test', [HomeController::class, 'test']);
+Route::get('/insert-task', [HomeController::class, 'insertTask']);
+Route::get('/select-task/{id}', [HomeController::class, 'selectTask']);
+Route::get('/select-all', [HomeController::class, 'selectAll']);
+Route::get('/update-task/{id}/{owner}', [HomeController::class, 'updateTask']);
+Route::get('/delete-task/{id}', [HomeController::class, 'deleteTask']);
+
+
